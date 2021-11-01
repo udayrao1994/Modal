@@ -9,6 +9,7 @@
                 class="fa fa-dollar m-1"
                 style="font-size: 25px; color: red"
               ></i>
+              
               <span class="m-2" id="labletext"
                 ><b>Review Payment options ?(optional)</b></span
               >
@@ -16,7 +17,10 @@
 
             <div class="col-1">
               <h3 class="title">
-                <i class="fa fa-angle-down icon"></i>
+                
+                  <span v-if="!visible"><i class="fa fa-angle-down icon"></i></span>
+                 <span v-if="visible"><i class="fa fa-angle-up icon"></i></span>
+                
               </h3>
             </div>
           </div>
@@ -27,10 +31,10 @@
       <div class="accordion-body">
         <div class="col-12 payMode">
           <span
-            ><input type="radio" id="cash" name="payMode" value="cash" @click="cash"/>Cash
+            ><input type="radio" id="cash" name="payMode" value="cash" />Cash
           </span>
         </div>
-        <div class="">
+        <div class="changecolor" v-if="visible">
           <div class="col-12 payMode">
             <div @click="toggle2">
               <span>
@@ -50,6 +54,7 @@
                   <dropdown
                     label="How Yours Credit "
                     name="How yours Credit"
+                    
                     :yearsArr="condition"
                   />
                 </div>
@@ -227,6 +232,9 @@ this.visible  =false;
 
 .panel--header {
   padding: 0.5em;
+  
+
+
 }
 
 .panel--header {
@@ -308,6 +316,9 @@ this.visible  =false;
   color: red;
 }
 .panel--body {
+  background-color: lightgray;
+}
+.changecolor{
   background-color: lightgray;
 }
 </style>  

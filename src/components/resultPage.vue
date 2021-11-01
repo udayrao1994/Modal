@@ -19,7 +19,7 @@
             <div class="col-4 text-start bg-dark text-white"><strong>Milage</strong></div><div class="col-8 border-bottom">{{items.milage}}</div>
             <div class="col-4 text-start bg-dark text-white"><strong>VIN</strong></div><div class="col-8 border-bottom">{{items.vin}}</div>
             <div class="col-4 text-start bg-dark text-white"><strong>Message</strong></div><div class="col-8">{{items.message}}</div>
-                    <div class="col-4 text-start bg-dark text-white"><strong>Paymode</strong></div><div class="col-8 border-bottom">{{items.payMode}}</div>
+                    <div class="col-4 text-start bg-dark text-white"><strong>How are you credit</strong></div><div class="col-8 border-bottom">{{items.credit}}</div>
         </div>
 
       <!-- <div class="row">
@@ -121,9 +121,9 @@ export default {
 
 .footer {
   text-align: center;
-  height: 50px;
+  height: 55px;
   font-weight: 600;
-  padding-top: 130px;
+  padding-top: 100px;
 
   font-size: 20px;
 

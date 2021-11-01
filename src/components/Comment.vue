@@ -16,7 +16,9 @@
 
             <div class="col-1">
               <h3 class="title">
-                <i class="fa fa-angle-down icon"></i>
+               
+                  <span v-if="!visible"><i class="fa fa-angle-down icon"></i></span>
+                 <span v-if="visible"><i class="fa fa-angle-up icon"></i></span>
               </h3>
             </div>
           </div>

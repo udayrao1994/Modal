@@ -20,7 +20,11 @@ export default new Vuex.Store({
             condition : "Good",
             milage : 45,
             vin : 45677,
-            message : " Hi this is my page"
+            message : " Hi this is my page",
+            credit :"",
+            downpayment:"",
+            termmonth:"",
+
         }
 
     },
@@ -68,8 +72,14 @@ export default new Vuex.Store({
             if(item.key === "message"){
                 state.items.message = item.value;
             }
-            if(item.key === "slider1"){
-                state.items.slider1 = item.value;
+            if(item.key === "payMode"){
+                state.items.payMode = item.value;
+            }
+            if(item.key === "How yours Credit"){
+                state.items.credit = item.value;
+            }
+            if(item.key === "years"){
+                state.items.years = item.value;
             }
         }
 
